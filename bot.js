@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`Desert Bot- Scrpit By ┃ KillerFox`);
+      console.log(`Desert Bot- Scrpit By ┃ ArabSupport`);
         console.log(`----------------`);
       console.log(`ON ${client.guilds.size} Servers '     Bot By TEAM ArabSupport ' `);
     console.log(`----------------`);
