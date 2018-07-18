@@ -8,7 +8,7 @@ client.on('ready', () => {
    console.log(`----------------`);
       console.log(`Desert Bot- Scrpit By ┃ KillerFox`);
         console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Bot By ┃ KillerFox ' `);
+      console.log(`ON ${client.guilds.size} Servers '     Bot By ┃Server Down ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(` Bot By KillerFox | $help `,"http://twitch.tv/S-F")
@@ -16,7 +16,7 @@ client.user.setStatus("dnd")
 });
 
 client.on('message', function(msg) {
-if(msg.content.startsWith ('$server')) {
+if(msg.content.startsWith ('^server')) {
       let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
       .setThumbnail(msg.guild.iconURL)
@@ -37,7 +37,7 @@ if(msg.content.startsWith ('$server')) {
 
 
     client.on('message', msg => { 
-      if (msg.content.startsWith(`$sug`)) {
+      if (msg.content.startsWith(`^sug`)) {
          let args = msg.content.split(" ").slice(1);
         if (!args[1]) return msg.reply(`يجب كتابه الاقتراح`)
         if (msg.guild.channels.find('name', 'suggest')) {
@@ -72,7 +72,7 @@ client.on('guildMemberAdd', member => {
       channel.sendEmbed(embed);
     });
   client.on("message", message => {
- if (message.content === "$help-js-bc") {
+ if (message.content === "^help-js-bc") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setFooter('─═════════ {✯FoxBot✯} ════════════─')
@@ -83,18 +83,44 @@ client.on('guildMemberAdd', member => {
 });
 
   client.on("message", message => {
- if (message.content === "$help-js-bc-1") {
+ if (message.content === "^help-js-bc-1") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('─═════════ {✯FoxBot✯} ════════════─')
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
 	  .addField('**❖ برودكاست + للكل + مطور ➺',` ⦁  https://hastebin.com/bipanureqa.js ⦁**`)
 	  .addField('**❖ برودكاست + للكل + غير مطور ➺',` ⦁  https://hastebin.com/kuvoruzowe.cs ⦁**`)
 	  .addField('**❖  برودكاست + للأونلاين + مع منشن + غير مطور ➺',` ⦁  https://hastebin.com/zujuvupali.php ⦁**`)
 	  .addField('**❖ برودكاست + للكل + مع منشن + غير مطور ➺',` ⦁  https://hastebin.com/zojokunayo.php ⦁**`)
-      .setFooter('─═════════ {✯FoxBot✯} ════════════─')
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
   message.author.send({embed});
   }
 });
+
+
+client.on("message", message => {
+ if (message.content === "$help-js-welcome-1") {
+  const embed = new Discord.RichEmbed()
+      .setColor("RANDOM")
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
+      .addField('**❖ كود ترحيب مع ذكر رقم العضو ➺',` ⦁ https://hastebin.com/zapuyexive.js**`)
+      .addField('**❖ كود الترحيب مع صورة ➺',` ⦁ https://hastebin.com/tujehubuqo.php**`)
+      .addField('**❖ كود مغادرة العضو ➺',` ⦁ https://hastebin.com/gufimedaca.js**`)
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
+  message.author.send({embed});
+  }
+});
+
+client.on("message", message => {
+ if (message.content === "$help-js-welcome") {
+  const embed = new Discord.RichEmbed()
+      .setColor("RANDOM")
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
+      .addField('**$help-js-welcome-1➺',` ⦁جميع اكواد الترحيب⦁**`)
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
+  message.author.send({embed});
+  }
+});
+
     
     client.on('guildMemberRemove', member => {
         var embed = new Discord.RichEmbed()
@@ -115,7 +141,7 @@ client.on('guildMemberAdd', member => {
   var Himo_04 = ["https://f.top4top.net/p_682it2tg6.png","https://e.top4top.net/p_682a1cus5.png","https://d.top4top.net/p_682pycol4.png","https://c.top4top.net/p_682vqehy3.png","https://b.top4top.net/p_682mlf9d2.png","https://a.top4top.net/p_6827dule1.png","https://b.top4top.net/p_682g1meb10.png","https://a.top4top.net/p_682jgp4v9.png","https://f.top4top.net/p_682d4joq8.png","https://e.top4top.net/p_6828o0e47.png","https://d.top4top.net/p_6824x7sy6.png","https://c.top4top.net/p_682gzo2l5.png","https://b.top4top.net/p_68295qg04.png","https://a.top4top.net/p_682zrz6h3.png","https://f.top4top.net/p_6828vkzc2.png","https://e.top4top.net/p_682i8tb11.png","https://f.top4top.net/p_8816hvic1.png","https://d.top4top.net/p_882020461.png","https://e.top4top.net/p_882s3ftn1.png","https://a.top4top.net/p_882eg9c51.png","https://c.top4top.net/p_882xkcqd1.png","https://f.top4top.net/p_882w7pdi1.png","https://a.top4top.net/p_882gcpmo1.png"]
     client.on('message', message => {
         var args = message.content.split(" ").slice(1);
-    if(message.content.startsWith('$لو خيروك')) {
+    if(message.content.startsWith('^لو خيروك')) {
          var cat = new Discord.RichEmbed()
 .setImage(Himo_04[Math.floor(Math.random() * Himo_04.length)])
 message.channel.sendEmbed(cat);
@@ -185,7 +211,7 @@ message.channel.sendEmbed(cat);
     'صراحه  |  ما هي أمنياتك المُستقبلية؟‏',
 ]
   client.on('message', message => {
-if (message.content.startsWith('$صراحه')) {
+if (message.content.startsWith('^صراحه')) {
     if(!message.channel.guild) return message.reply('** This command only for servers **');
  var client= new Discord.RichEmbed()
  .setTitle("لعبة صراحة ..")
@@ -199,7 +225,7 @@ if (message.content.startsWith('$صراحه')) {
 }
 });
 client.on('message', message => {
-     if (message.content === "$servers") {
+     if (message.content === "^Online") {
      let embed = new Discord.RichEmbed()
   .setColor("#0000FF")
   .addField("**Server: **" , client.guilds.size)
@@ -209,24 +235,14 @@ client.on('message', message => {
 if (message.content === '$help1') {
               var embed  = new Discord.RichEmbed()
                 .addField("**LINKS**" ,":no_entry_sign: تم اضافه منع الروابط :no_entry_sign: ")
-				.addField("**Bot**" ," :heart: Bot By KillerFox_:heart: ")
-                .addField("broadcast (bc)" ,"**الاستخدام:** `` <الرساله> , $bc <الرساله>``")
-                .addField("**BAN**" ,"**الاستخدام:** ``$ban <المستخدم>``")
-                .addField("**KICK**" ,"**الاستخدام:** ``$kick <المستخدم> ``")
-                .addField("**ِAVATAR**" ,"**الاستخدام:** ``$avatar``")
-                .addField("**INFO**", "**الأستخدام :** ``$info``")
-                .addField("**SAY**" ,"**الاستخدام:** ``$say <الرساله>``")
-                .addField("**ID**" ,"**ال��ستخدام:** ``$id``")
-                .addField("**SERVER**" ,"**الاستخدام:** ``$server``")
-                .addField("**INVITE**" ,"**الاستخدام:** ``$invite <لأضافه البوت لأى سيرفر>``")
-                .addField("**SUPPORT**" ,"**الاستخدام:** ``$suppport <سيرفر دعم الفنى>``")
-                .addField("**sug**" ,"**الاستخدام:** ``$Sug <اقتراح>``  ")
-                .addField("**CLEAR**" ,"**الاستخدام:** ``$clear <العدد>``")
-                .addField("**PING**", "**الأستخدام:** ``$ping``")
-                .addField("**SERVERNAME**", "**الأستخدام:** ``$servername``")
-                .addField("**sra7a**", "**الاستخدام** ``$صراحه``")
-                .addField("**Lw_5erok**", "**الاستخدام** ``$لو خيروك``")
-                .addField("**TWEET**", "**الاستخدام** ``$tweet <الرساله>``")
+                .addField("**SAY**" ,"**الاستخدام:** ``^say <الرساله>``")
+                .addField("**ID**" ,"**ايدي حقك:** ``^id``")
+                .addField("**SERVER**" ,"**معلومات عن السيرفر:** ``$server``")
+                .addField("**SUPPORT**" ,"**الاستخدام:** ``^suppport <سيرفر دعم الفنى>``")
+                .addField("**sug**" ,"**الاستخدام:** ``^Sug <اقتراح>``  ")
+                .addField("**CLEAR**" ,"**الاستخدام:** ``^clear <مسح الشات>``")
+                .addField("**sra7a**", "**الاستخدام** ``^صراحه``")
+                .addField("**Lw_5erok**", "**الاستخدام** ``^لو خيروك``")
                 .addField("**NO INVITE LINKE**","تم اضافة خاصية منع الانفيتات ")
                 .addField("**LOGIN**" , " تم اضافة خاصية التفعيل لطلب تشغيلها في السيرفر كلم المبيرمجين ")
                 .setColor('RED')
@@ -235,7 +251,7 @@ if (message.content === '$help1') {
     }
 });
 client.on('message', message => {
-  if(message.content === ('$clear')) {
+  if(message.content === ('^clear')) {
   let modRole = message.guild.roles.find("name", "Admin");
   if (!modRole) return message.reply('**ما عندك صلاحيه**'); {
     }
@@ -254,46 +270,41 @@ client.on('message', message => {
     }
 });
 client.on('message', msg => {
-  if (msg.content === '$invite') {
-    msg.reply('https://discordapp.com/api/oauth2/authorize?client_id=460797113643696129&permissions=8&scope=bot');
-  }
-});
-client.on('message', msg => {
-  if (msg.content === '$help') {
+  if (msg.content === '^help') {
     msg.reply('**:heart:  شوف الخاص :heart:**');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content === '$help1') {
+  if (msg.content === '^help1') {
     msg.reply('**:heart:  شوف الخاص :heart:**');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content === '$help3') {
+  if (msg.content === '^help3') {
     msg.reply('**:heart: قريبا :heart:**');
   }
 });
 client.on('message', msg => {
-  if (msg.content === '$help2') {
+  if (msg.content === '^help2') {
     msg.reply('**:heart:  شوف الخاص :heart:**');
   }
 });
 
 // Your Avatar URL!
 client.on('message', message => {
-    if (message.content === "$Avatar") {
+    if (message.content === "^Avatar") {
     message.reply(message.author.avatarURL); 
     }
 });
 client.on('message', msg => {
-  if (msg.content === '$suppport') {
-    msg.reply('السيرفر للمساعده,https://discord.gg/a5T4zQ');
+  if (msg.content === '^suppport') {
+    msg.reply('السيرفر للمساعده,https://discord.gg/k2J6av');
   }
 });
     client.on('message', message => {
-     if (message.content === "$id") {
+     if (message.content === "^id") {
      let embed = new Discord.RichEmbed()
   .setThumbnail(message.author.avatarURL)  
   .setAuthor(message.author.username)
@@ -310,7 +321,7 @@ client.on('message', msg => {
   message.channel.sendEmbed(embed);
     }
 });
-var prefix = "$";
+var prefix = "^";
 client.on('message', message => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
@@ -345,11 +356,11 @@ client.on('ready', () => {
  if (message.content === "$help") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('─══════ {✯FoxBot✯} ══════─')
+      .setFooter('─══════ {✯ArabSupport✯} ══════─')
 	  .addField('**➺ $help1 ➺**', `** ⦁ أوامر عامة ⦁ **`)
 	  .addField('**➺ $help2 ➺**', `** ⦁قائمة الاكواد ⦁ **`)
 	  .addField('**➺ $help3 ➺**', `⦁ Soon ⦁`)
-      .setFooter('─══════ {✯FoxBot✯} ══════─')
+      .setFooter('─══════ {✯ArabSupport✯} ══════─')
   message.author.send({embed});
   }
 });
@@ -357,10 +368,10 @@ client.on('ready', () => {
  if (message.content === "$help2") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('─═════════ {✯FoxBot✯} ════════════─')
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
 	  .addField('**$help-js ➺** **⦁ قائمة أكواد الجافا سكربت ⦁**')
 	  .addField('**$help-soon ➺**')
-      .setFooter('─═════════ {✯FoxBot✯} ════════════─')
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
   message.author.send({embed});
   }
 });
@@ -369,11 +380,11 @@ client.on('ready', () => {
  if (message.content === "$help-js") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('─═════════ {✯FoxBot✯} ════════════─')
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
 	  .addField('**$help-js-source ➺ ⦁ قسم السورس الأساسي ⦁**')
 	  .addField('**$help-js-bc ➺ ⦁ قسم أكواد البرودكاست ⦁**')
 	  .addField('**$help-js-welcome ➺ ⦁ قسم أكواد الترحيب ⦁**')
-      .setFooter('─═════════ {✯FoxBot✯} ════════════─')
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
   message.author.send({embed});
   }
 });
@@ -382,11 +393,11 @@ client.on('ready', () => {
  if (message.content === "$help-js-source") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('─═════════ {✯FoxBot✯} ════════════─')
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
 	  .addField('**$help-js-source-1 ➺ ⦁ السورس الأساسي⦁**')
 	  .addField('**$help-js-source-2 ➺ ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت ⦁**')
 	  .addField('**$help-js-source-3 ➺ ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت ⦁**') 
-      .setFooter('─═════════ {✯FoxBot✯} ════════════─')
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
   message.author.send({embed});
   }
 });
@@ -394,9 +405,9 @@ client.on('ready', () => {
  if (message.content === "$help-js-source-1") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('─═════════ {✯FoxBot✯} ════════════─')
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
 	  .addField('**❖ كود السورس الأساسي https://hastebin.com/xumiferaru.coffeescript**')
-      .setFooter('─═════════ {✯FoxBot✯} ════════════─')
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
   message.author.send({embed});
   }
 });
@@ -404,9 +415,9 @@ client.on('ready', () => {
  if (message.content === "$help-js-source-2") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('─═════════ {✯FoxBot✯} ════════════─')
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
 	  .addField('** ❖ السورس الأساسي مع الستريمنق ومعلومات البوت https://hastebin.com/idotifusid.coffeescript **')
-      .setFooter('─═════════ {✯FoxBot✯} ════════════─')
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
   message.author.send({embed});
   }
 });
@@ -414,9 +425,9 @@ client.on('ready', () => {
  if (message.content === "$help-js-source-3") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('─═════════ {✯FoxBot✯} ════════════─')
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
 	  .addField('** ❖ السورس الأساسي مع الواتشينق https://hastebin.com/jivizupafi.coffeescript **')
-      .setFooter('─═════════ {✯FoxBot✯} ════════════─')
+      .setFooter('─═════════ {✯ArabSupport✯} ════════════─')
   message.author.send({embed});
   }
 });
@@ -428,8 +439,8 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
          client.on('message', message => {
-            if (message.content === '$by') {
-              message.channel.send('***:heart:*** **Server By KillerFox** ***:heart:***');
+            if (message.content === '^by') {
+              message.channel.send('***:heart:*** **Server By Team ArabSupport** ***:heart:***');
               message.channel.sendFile("./photoshop.PNG");
                
 
@@ -452,8 +463,8 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
          client.on('message', message => {
-            if (message.content === '$bot') {
-              message.channel.send('***:heart:*** **Bot By KillerFox** ***:heart:***');
+            if (message.content === '^bot') {
+              message.channel.send('***:heart:*** **Bot By Team ArabSupport** ***:heart:***');
               message.channel.sendFile("./photoshop.PNG");
                
 
@@ -464,8 +475,8 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
          client.on('message', message => {
-            if (message.content === 'KillerFox_') {
-              message.channel.send('**:heart: حالين مشغول بس يكمل يرد:heart:** ');
+            if (message.content === 'Arab') {
+              message.channel.send('**:heart: حالين مشغولين بس نشوفك نرد:heart:** ');
               message.channel.sendFile("./photoshop.PNG");
                
 
@@ -536,8 +547,8 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
          client.on('message', message => {
-            if (message.content === '$Dev') {
-              message.channel.send('***:heart:*** **Dev Server KillerFox** ***:heart:***');
+            if (message.content === '^Dev') {
+              message.channel.send('***:heart:*** **Dev Server Team ArabSupport** ***:heart:***');
               message.channel.sendFile("./photoshop.PNG");
                
 
