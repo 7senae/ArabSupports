@@ -8,7 +8,7 @@ client.on('ready', () => {
    console.log(`----------------`);
       console.log(`Desert Bot- Scrpit By ┃ KillerFox`);
         console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Bot By ┃Server Down ' `);
+      console.log(`ON ${client.guilds.size} Servers '     Bot By TEAM ArabSupport ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(` Bot By KillerFox | $help `,"http://twitch.tv/S-F")
